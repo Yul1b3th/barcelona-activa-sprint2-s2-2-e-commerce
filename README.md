@@ -8,6 +8,12 @@ You will be in charge of setting up an initial demo version of the application f
 
 <br>
 
+## Landing Page
+
+- [Landing Page | E-commerce](https://yul1b3th.github.io/barcelona-activa-sprint2-s2-2-e-commerce)
+
+<br>
+
 ## Requirements
 
 
