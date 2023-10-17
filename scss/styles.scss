@@ -1,0 +1,121 @@
+$dark: #900C3F;
+
+$secondary: #900C3F;
+
+$navbar-light-brand-color: #900C3F;
+
+$navbar-light-active-color: #900C3F;
+
+$navbar-light-toggler-icon-bg-closed: url('../images/icon-close.svg');
+$navbar-light-toggler-icon-bg-open: url('../images/icon-hamburger.svg');
+$navbar-toggler-icon-bg: $navbar-light-toggler-icon-bg-open;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+body {
+ display: flex;
+ flex-direction: column;
+ min-height: 100vh;
+}
+
+.card {
+ transition: all 0.5s ease;
+}
+
+.card-footer span {
+ // background-color: $dark;
+ color: #fff;
+ font-weight: 500;
+ padding: 0.2rem 0.5rem;
+ border-radius: 0.2rem 0.2rem 0.2rem 0.2rem;
+}
+
+.card:hover {
+ box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15) !important;
+}
+
+nav .nav-item {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ padding: 1rem;
+ // border: 0px !important;
+}
+
+nav .nav-item .nav-link {
+ font-weight: 500 !important;
+ color: $white;
+}
+
+.navbar-nav .nav-link.active {
+ font-weight: bold !important;
+ color: $dark !important;
+}
+
+.offcanvas {
+ width: 100%;
+ border: 0;
+ background-image: linear-gradient(45deg, #900C3F, #F94C10);
+}
+
+nav .open {
+ background-image: $navbar-light-toggler-icon-bg-open;
+}
+
+nav .btn-close {
+ background-image: $navbar-light-toggler-icon-bg-closed;
+ opacity: inherit;
+}
+
+
+.btn-outline-secondary {
+ background-color: #fff;
+ transition: all 0.5s ease;
+}
+
+.btn-outline-secondary:hover {
+ background-color: #fff;
+ color: $dark;
+}
+
+.btn-outline-secondary:active {
+ background-color: #fff !important;
+ color: $dark !important;
+}
+
+.btn-outline-secondary:hover {
+ background-color: #fff;
+ color: $dark;
+}
+
+footer {
+ margin-top: auto;
+}
+
+@media (min-width: 768px) {
+ .header .header-left {
+  padding: 0rem 2rem;
+ }
+
+ .offcanvas {
+  background: unset;
+ }
+
+ nav .nav-item .nav-link {
+  color: #1a1a1a;
+  transition: all 0.5s ease;
+ }
+
+ nav .nav-item .nav-link:hover {
+  color: #F94C10;
+ }
+
+ .navbar-nav .nav-link.active {
+  color: $dark !important;
+ }
+
+ .navbar-nav {
+  width: inherit !important;
+ }
+
+}
